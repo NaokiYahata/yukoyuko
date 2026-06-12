@@ -1,7 +1,7 @@
 ---
 title: Wiki Schema
 type: schema
-updated: {{DATE}}
+updated: 2026-06-12
 ---
 
 # Wiki Schema — 構造・規約・ワークフロー定義
@@ -127,7 +127,7 @@ status: draft | active | stale | superseded   # 任意
 | Ingest | `/wiki-ingest` | `raw/` の新規ソース（バイナリは抽出）を読み、要約ページを作り、関連ページ・index・logへ波及更新。1ソースで10〜15ページに波及しうる。 |
 | Query | `/wiki-query` | qmdでWikiを検索して掘り、引用付きで回答。良い回答はWikiページとして還元。 |
 | Lint | `/wiki-lint` | 矛盾・陳腐化・孤立ページ・欠落概念・データギャップの検出。 |
-| Project Init | `/project-init` | テンプレートの具体化。プロジェクト固有設定・最初のリリース月の設定・`{{DATE}}` 置換。 |
+| Project Init | `/project-init` | テンプレートの具体化。プロジェクト固有設定・最初のリリース月の設定・`2026-06-12` 置換。 |
 | qmd Setup | `/qmd-setup` | 検索エンジン qmd のインストールとセットアップ。 |
 
 共通原則:

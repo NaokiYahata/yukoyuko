@@ -2,9 +2,9 @@
 title: Overview
 type: overview
 tags: [overview]
-created: {{DATE}}
-updated: {{DATE}}
-status: draft
+created: 2026-06-12
+updated: 2026-06-12
+status: active
 ---
 
 # Overview — プロジェクト全体像
@@ -13,24 +13,36 @@ status: draft
 > 新しいソースを取り込むたびに、全体像とthesisを更新する。詳細は各ページへ `[[リンク]]` で委ねる。
 
 ## 一行サマリ
-_(未設定 — `/project-init` で記入)_
+[[yukoyuko]] の新規スマホアプリ（[[yukoyuko-app]]）を企画・開発するプロジェクト。温泉特化のコミュニティ＋予約アプリで、開発／ベンダー側の視点で進行。
 
 ## 背景 / なぜやるのか
-_(未設定)_
+- [[yukoyuko]] は温泉宿予約のWeb（[[yukoyuko-net-web]]）を運営。「温泉ならゆこゆこ」を体現し温泉分野でNo.1を目指す（[[20260612-yukoyuko-app-plan]]）。
+- 過去にもアプリがあったがクローズ済み。新アプリで温泉好きの**ファンベース**を形成し、宿泊予約事業の売上UPにつなげる（[[past-app-lessons]] / [[vision-and-positioning]]）。
 
 ## ゴール / 成功の定義
-_(未設定)_
+- 温泉特化のコミュニティ＋予約アプリを **2026年内** にリリース（目標）（[[schedule-and-scope]]）。
+- 最重要KPI: **アプリのお客様評価**。成功像（1年後）= 評価No.1 かつ DL50万突破（[[target-and-monetization]]）。
+- 収益モデルは**送客手数料**。ターゲットは国内居住者・日本語のみ。
 
 ## 現在のthesis（作業仮説）
-_(まだソースが無いため未定。ingestが進むにつれて更新する)_
+- アプリは「Web=予約／アプリ=ファンベース」だが**予約フローも必須**のハイブリッド。会員はWebと共通化・双方向同期（[[app-web-role-split]]）。
+- MVPのMUSTは**宿予約**と**クチコミ投稿**。検索・提案体験はこちらの企画提案で差別化（[[core-features]]）。
+- 技術はiOS(Swift)/Android(Kotlin)両対応、ネイティブ vs クロスは両見積りで選定。AWS・3環境（[[development-approach]]）。
+- 非機能はMVP最低限版が共通条件として確定済み（稼働率99%、DAU 5,000→50,000 等）（[[non-functional-requirements]]）。
+- まず**UIUX提案を先行**し、顧客管理システムのAPI連携はその後に詰める（[[external-integration]]）。
 
 ## 主要な論点 / 未解決の問い
-- _(未設定)_
+- 初回リリースの正式な対象月とフェーズ境界（Release 1 / Release 2 の切り分け）（[[schedule-and-scope]]）。
+- ポイント制度の仕様、ジャパネット決済基盤の連携可否・仕様（[[payment-and-points]]）。
+- 顧客管理システム（自社開発）のAPI仕様（UIUX提案後に開示）（[[external-integration]]）。
+- 検索・提案体験の具体（絞り込み再現 vs 行動シナリオ提案）（[[core-features]]）。
+- 過去アプリのクローズ理由・教訓（キックオフ会で共有済み・未取り込み＝データギャップ）（[[past-app-lessons]]）。
+- 予算規模（未定）。
 
 ## 現在のリリースサイクル
-**未設定** — `/project-init` で最初のリリース月を決める
+**未設定** — 初回リリース月は未定。決まり次第ここに記入する。
 
-- 直近リリース: _(未設定。決まったら `releases/YYYY-MM.md` を作りここにリンク)_
+- 直近リリース: _(未定。決まったら `releases/YYYY-MM.md` を作りここにリンク)_
 - 未割当の要求・アイデア: [[backlog]]
 
 > ここがプロジェクトの現在リリースの唯一の記録場所。`/wiki-ingest` での取り込み時や手動で更新する。

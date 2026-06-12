@@ -3,7 +3,7 @@
 Thumbs.db
 *.swp
 
-# Obsidian の設定はすべて個人ローカル扱い（git管理しない）
+# Obsidian の設定一式（git管理対象外）
 .obsidian/
 
 # 環境ローカル
@@ -23,3 +23,8 @@ raw/**/*.docx
 raw/**/*.key
 raw/**/*.numbers
 raw/**/*.pages
+
+# ローカル生成成果物（AIが会話中に生成する git 管理不要の成果物）。
+# .gitkeep のみ追跡し、配下の中身はコミットしない。
+local_outputs/*
+!local_outputs/.gitkeep

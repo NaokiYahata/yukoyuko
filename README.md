@@ -18,6 +18,7 @@
 - [`wiki/overview.md`](./wiki/overview.md) — プロジェクト全体像・thesis・現在のリリースサイクル（**可変状態の単一の真実**）
 - [`wiki/index.md`](./wiki/index.md) — 全ページカタログ
 - [`wiki/_schema.md`](./wiki/_schema.md) — Wikiの構造・規約・ワークフロー定義（Wikiを操作する前に必読）
+- [`docs/guide.md`](./docs/guide.md) — このテンプレート/ツールの使い方（セットアップ・構成・スキル・qmd・リリースモデル）
 
 Obsidian で `wiki/` フォルダを開くと、グラフビューで知識の形を見ながらブラウズできます（Obsidian = ビューア、Claude = 書き手、Wiki = 成果物）。
 

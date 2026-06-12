@@ -3,9 +3,8 @@
 Thumbs.db
 *.swp
 
-# Obsidian のワークスペース個人設定（テーマ等の共有が不要なら）
-.obsidian/workspace*.json
-.obsidian/cache
+# Obsidian の設定はすべて個人ローカル扱い（git管理しない）
+.obsidian/
 
 # 環境ローカル
 .env

@@ -1,0 +1,26 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Obsidian のワークスペース個人設定（テーマ等の共有が不要なら）
+.obsidian/workspace*.json
+.obsidian/cache
+
+# 環境ローカル
+.env
+
+# 元データ（バイナリ原本）はgit管理しない。
+# pptx/pdf/xlsx/docx 等は抽出した markdown のみを raw/ にコミットする。
+raw/_originals/*
+!raw/_originals/.gitkeep
+raw/**/*.pdf
+raw/**/*.ppt
+raw/**/*.pptx
+raw/**/*.xls
+raw/**/*.xlsx
+raw/**/*.doc
+raw/**/*.docx
+raw/**/*.key
+raw/**/*.numbers
+raw/**/*.pages

@@ -50,7 +50,7 @@ description: raw/ に置かれた新規ソースをWikiに取り込む。pptx/pd
 - 全体像やthesisに影響するなら `wiki/overview.md` を更新。
 
 ### 6. 検索インデックスを更新する（qmd 利用時）
-- qmd を導入済みなら、新規mdを検索対象に取り込むため `qmd embed` を実行する（未導入なら `/qmd-setup` を案内）。
+- qmd を導入済みなら、新規mdを検索対象に取り込むため `qmd update`（再インデックス）→ `qmd embed` の順で実行する（`qmd embed` だけでは新規ファイルが検索に入らない）。未導入なら `/qmd-setup` を案内。
 
 ### 7. log に追記する — `wiki/log.md` の末尾に:
 ```

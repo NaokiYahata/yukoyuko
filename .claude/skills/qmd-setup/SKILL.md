@@ -74,5 +74,5 @@ qmd mcp --http --daemon   # localhost:8181 で常駐 / 停止は qmd mcp stop
 ```
 
 ## 運用メモ
-- 新しいソースを取り込んだら `qmd embed` を再実行してインデックスを更新する（`/wiki-ingest` の手順にも含まれる）。
+- 新しいソースを取り込んだら `qmd update`（再インデックス）→ `qmd embed` の順で再実行してインデックスを更新する（`qmd embed` だけでは新規ファイルが検索に入らない。`/wiki-ingest` の手順にも含まれる）。
 - 検索は `wiki-query` から利用する。導入後は CLAUDE.md の「プロジェクト固有設定」に「検索: qmd 有効」と記録しておくとよい。
